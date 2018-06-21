@@ -1,3 +1,5 @@
+![](logo.png)
+
 # Actividad 04 - Funciones y probabilidad básica
 
 * Para poder realizar esta actividad debes haber revisado la lectura correspondiente a la semana.
