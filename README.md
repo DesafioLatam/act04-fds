@@ -6,9 +6,12 @@
 * Crea una carpeta de trabajo y guarda todos los archivos correspondientes (notebook y csv).
 * Una vez terminada la actividad, comprime la carpeta y sube el `.zip` a la sección correspondiente.
 
+* Importe las librerías `pandas` y `numpy` siguiendo las convenciones.
+* Importe la base de datos `worldcup2014.csv` utilizada en la sesión anterior y guárdela en un objeto `df` para su posterior uso.
+
 ## Ejercicio 1: Generación de funciones
 
-* Genere funciones para calcular la media y varianza de un vector. Debe cumplir con los siguientes requistos:
+* Genere dos funciones para calcular la media y varianza de un vector. Debe cumplir con los siguientes requistos:
     - Ambas funciones deben ingresar el vector a analizar como un argumento `x`.
     - Las funciones deben contener `docstrings` con la documentación asociada a la variable.
     - Deben __retornar__ el resultado (_tip_: utilice `return`).
@@ -33,10 +36,9 @@ tmp = pd.DataFrame({'continente': continent,
                    'std_goles': store_std})
 
 tmp
-
 ```
 
-* En base a la información disponible, genere una función con los argumentos `dataframe`, `group_by` y `var` para ingresar una base de datos, una variable para segmentar y una variable a analizar, respectivamente.
+* En base al código presentado, refactorízelo en una función con los argumentos `dataframe`, `group_by` y `var` para ingresar una base de datos, una variable para segmentar y una variable a analizar, respectivamente.
 * Se debe ingresar la base de datos completa, para que la segmentación se realize __dentro__ de la función.
 * La función debe retornar un `DataFrame`.
 * Implemente la función para extraer la información sobre la cantidad de goles a favor, en contra y la cantidad de puntos.
@@ -57,7 +59,7 @@ tmp
 ## Ejercicio 4: Función simuladora
 
 * Genere un método llamado `simulate_pets_prob` que tome como argumento un número finito de simulaciones a generar.
-* El método debe simular dos situaciones, `young_pet` y `old_pet`, y contar la ocurrencia de los siguientes casos:
+* El método debe simular dos situaciones, `young_pet` y `old_pet`, y contar la ocurrencia de los siguientes escenarios:
     1. De los dos animales simulados, contar las ocasiones donde por lo menos uno de los animales sea un perro.
     - De los dos animales simulados, contar las ocasiones donde por lo menos uno sea un perro viejo.
     - De los dos animales simulados, contar las ocasiones donde los dos sean perros
